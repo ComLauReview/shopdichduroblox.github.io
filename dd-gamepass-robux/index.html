@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Roblox Dịch Dụ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png" type="img\logo">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="./index.html" class="logo">
+                <img src="assets/logo.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="">HELPER</a>
+                </div>
+                <div class="item">
+                    <a href="https://comlaureview.github.io/hoaiancoder.github.io/">Thông Tin ADMIN</a>
+                </div>
+                <div class="item">
+                    <a href="https://facebook.com/HoaiAnShungChing">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <img src="assets/user.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/cart.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 title">
+                <h3>ㅤDịch Dụ Bán Gamepass "Giảm 10%"cho Bill=>169k</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2th">
+                <div class="card">
+                    <div class="image">
+                        <a href="https://comlaureview.github.io/hoaiancoder.github.io/"><img src="./uploads/menu.png"></a>
+                    </div>
+                    <div class="name">
+                        <p> ㅤㅤㅤㅤChọn Vật Phẩm Muốn Mua</p>
+                    </div>
+                    <div class="price">
+                        <p> ㅤㅤㅤㅤㅤXem Bill - Liên Hệ </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 title">
+                <h3>ㅤQuý Khách Vui Lòng Nhắn Tin Cho ADMIN qua FB or Gmail để Admin Hỗ Trợ ạ</h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <p>Cảm Ơn Quý Khách Đã Xem</p>
+            </div>
+
+
+            </form>
+        </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += "active";
+        setTimeout(showSlides, 1000);
+    }
+</script>
+
+</html>
